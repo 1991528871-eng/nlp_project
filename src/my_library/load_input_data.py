@@ -7,6 +7,6 @@ def load(path):
                 sentence_arrays.append([ word_set.split(",") for word_set in l.split(" ") ])
     return sentence_arrays
 
-path = "data/test_data.txt"
-sentence_arrays = load("data/test_data.txt")
-print(sentence_arrays)
+# path = "data/test_data.txt"
+# sentence_arrays = load("data/test_data.txt")
+# print(sentence_arrays)

@@ -21,10 +21,10 @@ def load(path):
     return dic
 
 def count(dic, sentence):
+    result = []
     for i in range(len(sentence)):
         if sentence[i][1] in dic:
             result.append(dic[sentence[i][1]][0])
-    result = []
     return result
 
 #def count(dic, sentence):
