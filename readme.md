@@ -22,3 +22,5 @@ manage_output.py:
 （load_input_data.py と manage_output.py は1人で担当した方がいいかもしれません．）
 
 ユニットテストに関してまだ話し合う必要あります．
+
+test_messege : 変更したファイルをコミットしてみる
