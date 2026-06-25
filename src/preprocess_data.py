@@ -13,7 +13,8 @@ with open("data/data.txt", "r", encoding = "utf-8") as f:
     sentences = []
     for l in lines.split("\n"):
         # print(list(t.tokenize(l, wakati = True)))
-        sentences.append([ [token.surface, token.base_form] for token in t.tokenize(l) ])
+        if l != "":
+            sentences.append([ [token.surface, token.base_form] for token in t.tokenize(l) ])
 
 with open("data/processed_data.txt", "w", encoding = "utf-8") as f:
     for tokens in sentences:
