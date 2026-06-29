@@ -8,6 +8,7 @@ def into_str(str_list):
     return output
 
 with open("data/data.txt", "r", encoding = "utf-8") as f:
+#with open("data/test_data.txt", "r", encoding = "utf-8") as f:
     lines = f.read()
     t = Tokenizer()
     sentences = []
@@ -17,5 +18,6 @@ with open("data/data.txt", "r", encoding = "utf-8") as f:
             sentences.append([ [token.surface, token.base_form] for token in t.tokenize(l) ])
 
 with open("data/processed_data.txt", "w", encoding = "utf-8") as f:
+#with open("data/processed_test_data.txt", "w", encoding = "utf-8") as f:
     for tokens in sentences:
         print(into_str(tokens), file = f)

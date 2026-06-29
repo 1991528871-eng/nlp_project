@@ -3,7 +3,7 @@ def predict(count_statistics):    # 入力形式[[bun1dic1],[bun1dic2]]
     count2 = count_statistics[1]
     result = 0
     for i in range (len(count1)):
-        result+=count1[i]
+        result+=count1[i][1]
     for i in range (len(count2)):
-        result+=count2[i]/2
+        result+=count2[i][1]
     return result

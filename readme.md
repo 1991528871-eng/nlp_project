@@ -59,3 +59,21 @@ manage_output.py:
   「文」: 極性結果 が並ぶファイル "data/output.txt" を作成する
 
 tests/
+
+
+ps. 以下変更したところ：
+
+data.txt --
+  辞書2に対応させるために，「気持ちよく」などをすべて「気持ち良く」に変更
+dictionary2.txt --
+  416, 3173, 3397 行，単語がないため削除
+dictionary1.txt --
+  「気持ち」という単語単体が positive になっている．削除 (元 3917 行)
+use_dictionary_2.py --
+  アルゴリズム自体変更
+use_dictionary_1.py & use_dictionary_2.py & predict_polarity.py --
+  どの単語を認識したかがわかるように，count_statistics の様式を変更
+  それに対応してライブラリの中身も変更
+predict_polarity.py --
+  辞書2をちゃんと使っているアルゴリズムにしたので，2つの辞書の重みを同じように変更
+test_data.txt を追加
