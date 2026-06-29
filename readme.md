@@ -43,8 +43,8 @@ use_dictionary_1.py:
   count(dic, sentence) -- 辞書を参照する関数
     -1, 0, 1 のみからなら配列を返す．辞書になかった単語はスルーされる．
 
-use_dictionary_2.py: （途中）
-  dictionary2.txt から二個目の辞書を黄泉んで，参照する．
+use_dictionary_2.py:
+  dictionary2.txt から二個目の辞書を読み込んで，参照する．
   load(path) -- 辞書を読み込む関数
   count(dic, sentence) -- 辞書を参照する関数
     -1, 0, 1 のみからなら配列を返す．
