@@ -18,6 +18,7 @@ for i in range(len(sentence_arrays)):
     sentence = sentence_arrays[i]
     count_statistics = [ use_d1.count(d1, sentence), use_d2.count(d2, sentence) ]
 #    print(count_statistics)
+    output_manager.output_statistics(sentence_arrays[i], count_statistics)
     results.append( predictor.predict(count_statistics) )
 
-output_manager.output(sentence_arrays, results)
+output_manager.output_result(sentence_arrays, results)
